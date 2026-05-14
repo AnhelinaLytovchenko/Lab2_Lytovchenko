@@ -1,0 +1,60 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <EditText
+        android:id="@+id/editNum1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Число 1"
+        android:inputType="numberDecimal|numberSigned"
+        android:minHeight="48dp" />
+
+    <EditText
+        android:id="@+id/editNum2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Число 2"
+        android:inputType="numberDecimal|numberSigned"
+        android:minHeight="48dp" />
+
+    <RadioGroup
+        android:id="@+id/radioGroupOps"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp">
+
+        <RadioButton
+            android:id="@+id/radioPlus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Додати (+)" />
+
+        <RadioButton
+            android:id="@+id/radioMinus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Відняти (-)" />
+
+        <RadioButton
+            android:id="@+id/radioMult"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Помножити (×)" />
+
+        <RadioButton
+            android:id="@+id/radioDiv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Поділити (÷)" />
+
+    </RadioGroup>
+
+    <Button android:id="@+id/btnOk"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="OK"
+        android:layout_marginTop="20dp" />
+</LinearLayout>
